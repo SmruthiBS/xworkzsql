@@ -1,3 +1,4 @@
+CREATE database task;
 use  task;
   CREATE TABLE book(title varchar(50),author varchar(50),edition int,no_of_pages int,year_of_publish bigint,no_0f_copies int,no_of_readers int,price int,publication varchar(50),no_of_chapter int);
 select *from book;
