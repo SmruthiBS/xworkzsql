@@ -1,0 +1,15 @@
+CREATE TABLE shows(serial_no int,name varchar(50),telecast_time time,anchor varchar(15),no_of_contenstant int,no_of_judges int,judge varchar(50),telecast_date date,trp int,no_of_hrs int);
+INSERT INTO shows values(1,"sa ri ga ma pa",'02:10',"anushree",10,3,"arjun janya",'2022-05-23',3,2);
+SELECT * FROM shows;
+ INSERT INTO shows values(2,"deal or no deal",'03:00',"anushree",10,3,"arjun janya",'2022-05-23',3,2);
+ INSERT INTO shows values(3,"super",'04:00',"anu",10,3,"arjun janya",'2022-05-23',3,2);
+ INSERT INTO shows values(4,"takadimitha",'06:10',"neha",10,3,"arjun janya",'2022-05-23',3,2);
+ INSERT INTO shows values(5,"master chief",'07:00',"akul",10,3,"arjun janya",'2022-05-23',3,2);
+ INSERT INTO shows values(6,"dance dance",'08:00',"karthik",10,3,"arjun janya",'2022-05-23',3,2);
+ INSERT INTO shows values(7,"kathronke kelodi",'09:10',"arjun",10,3,"thanu",'2022-05-23',3,2);
+ INSERT INTO shows values(8,"rowdies",'10:10',"anushree",10,3,"tarun",'2022-05-23',3,2);
+ INSERT INTO shows values(9,"big boss",'05:00',"danya",10,3,"arjun ",'2022-05-23',3,2);
+ INSERT INTO shows values(10,"indian idol",'02:00',"rohit",10,3,"neha",'2022-05-23',3,2);
+ ALTER TABLE shows ADD COLUMN created_by varchar(15)  DEFAULT 'smruthi bs';
+ALTER TABLE shows ADD COLUMN created_at varchar(15)  DEFAULT 'xworkz';
+ ALTER TABLE shows ADD COLUMN created_time datetime DEFAULT  current_timestamp;
